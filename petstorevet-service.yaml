@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: petstorevet
+
+spec:
+  selector:
+    app: petstorevet
+
+  type: ClusterIP
+  ports:
+    - port: 7152
+      targetPort: 7152

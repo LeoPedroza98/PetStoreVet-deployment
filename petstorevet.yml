@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: petstorevet
+  labels:
+    app: petstorevet
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: petstorevet
+  template:
+    metadata:
+      labels:
+        app: petstorevet
+    spec:
+      containers:
+        - name: petstorevet
+          image: leopedroza98/petstorevet:latest
+          env:
+#            - name: AMQP_USERNAME
+#              valueFrom:
+#                secretKeyRef:
+#                  name: rabbit-user
+#                  key: username
