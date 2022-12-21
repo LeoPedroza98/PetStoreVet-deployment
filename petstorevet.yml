@@ -18,8 +18,8 @@ spec:
         - name: petstorevet
           image: leopedroza98/petstorevet:latest
           env:
-#            - name: AMQP_USERNAME
-#              valueFrom:
-#                secretKeyRef:
-#                  name: rabbit-user
-#                  key: username
+            - name: HOST_DB
+              valueFrom:
+                secretKeyRef:
+                  name: pet-store-db-user
+                  key: connection-string
