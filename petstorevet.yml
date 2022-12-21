@@ -18,7 +18,7 @@ spec:
         - name: petstorevet
           image: leopedroza98/petstorevet:latest
           env:
-            - name: HOST_DB
+            - name: MySqlConnection__MysqlConnectionString
               valueFrom:
                 secretKeyRef:
                   name: pet-store-db-user
