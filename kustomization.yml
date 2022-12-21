@@ -1,10 +1,10 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-#  - storeserviceat.yml
-#  - storeserviceat-service.yaml
-#  - storeserviceat-ingress.yaml
+  - petstorevet.yml
+  - petstorevet-service.yaml
+  - petstorevet-ingress.yaml
 images:
   - name: petstorevet
     newName: leopedroza98/petstorevet
-    newTag: 1.0
+    newTag: "221221"

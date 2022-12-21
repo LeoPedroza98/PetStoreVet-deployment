@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: petstorevet
-          image: leopedroza98/petstorevet:latest
+          image: petstorevet
           env:
             - name: MySqlConnection__MysqlConnectionString
               valueFrom:
