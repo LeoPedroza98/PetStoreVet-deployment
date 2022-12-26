@@ -7,4 +7,4 @@ resources:
 images:
   - name: petstorevet
     newName: leopedroza98/petstorevet
-    newTag: "221225.2f40fb4"
+    newTag: "221226.0dd30de"
